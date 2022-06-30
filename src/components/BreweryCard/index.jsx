@@ -16,7 +16,7 @@ const BreweryCard = ({ data }) => {
         }
     }
 
-    return <div className="brewery-card">
+    return <div className="brewery-card" role="figure">
             <h2>{data.name}</h2>
             <span><em>{data.city}, {data.state}</em></span>
             <hr />
