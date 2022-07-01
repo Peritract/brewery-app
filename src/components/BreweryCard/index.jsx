@@ -5,7 +5,7 @@ import { ButtonControl } from '../../components';
 
 const BreweryCard = ({ data }) => {
 
-    const saved = useSelector(state => state.breweries.saved.includes(data))
+    const saved = useSelector(state => state.breweries.saved.some((card => card.id === data.id)))
     const dispatch = useDispatch();
 
     const handleSave = () => {
