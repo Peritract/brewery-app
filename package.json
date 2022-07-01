@@ -1,6 +1,7 @@
 {
   "scripts": {
     "test": "jest --watch",
+    "test-coverage": "jest  --coverage --collectCoverageFrom=./src/**",
     "dev": "vite",
     "build": "vite build"
   },
